@@ -110,7 +110,7 @@ cursor: pointer;
 }
 .button--big{
   padding: 18px 40px 16px;
-
+  border-radius: 35px;
 
 }
 .button--rectengle{
@@ -203,4 +203,36 @@ margin-right: 30px;
 }
 .site-header__login-link:hover{
   color: var(--text-color-dark);
+}
+/* HERO */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-image: url("../img/working_with_computer.svg");
+background-repeat: no-repeat;
+/* background-size: contain; */
+background-position:   left calc(50% + 400px) top 30px;
+}
+
+.hero__inner {
+  max-width: 565px;
+}
+.tittle {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: var(--text-color-dark);
+
+}
+.hero__text {
+  padding-top: 0;
+padding-bottom: 38px;
+font-size: 22px;
+line-height: 36px;
+}
+.button {
+}
+.button--big {
 }
