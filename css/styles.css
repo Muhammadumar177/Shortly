@@ -5,7 +5,7 @@
 --text-color-dark:#34313d;
 --accent-color:#2bd0d0;
 --accent-color-hover:#9ae3e3;
---light-bg:#eff1f7;
+--light-bg:#0b0b0e;
 --dark-bg:#232127;
 --error-color:#f46363;
 
@@ -71,6 +71,25 @@ img{
 
 
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* PLACEHOLDERS STYLES */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder{
+  color: rgba(52, 49, 61);
+  opacity: 1;
+}
+
 
 .container{
   width: 100%;
@@ -94,6 +113,7 @@ font-size: 20px;
 line-height: 30px;
 font-weight: bold;
 cursor: pointer;
+white-space: nowrap;
 
 
 }
@@ -232,7 +252,76 @@ padding-bottom: 38px;
 font-size: 22px;
 line-height: 36px;
 }
-.button {
+
+/* .INDEX-URL-SHORTENER-FEATURES-WRAPPER */
+
+.index-url-shortener-features-wrapper {
+background-color: var(--light-bg);
+display: flex;
+flex-direction: column;
 }
-.button--big {
+
+.index-url-shortener-features-wrapper__url-shortener {
+margin-top: -184px;
+}
+.url-shortener {
+
+}
+
+
+.url-shortener__form {
+  display: flex;
+  padding:48px 64px ;
+  background-image: url(../img/Path\ 2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-color: #4B3F6B;
+
+}
+.url-shortener__input-wrapper {
+  position: relative;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+margin-right: 24px;
+}
+.url-shortener__input {
+  display: block;
+  flex-grow: 1;
+width: 100%;
+padding: 14px 32px;
+font-size: 20px;
+line-height: 36px;
+border: 3px solid transparent;
+border-radius: 10px;
+color:var(--text-color-dark);
+}
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid{
+border-color: var(--error-color);
+color:rgba(244, 99, 99 ,) ;
+}
+.url-shortener__error-msg {
+  display: none;
+
+}
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~   .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color: var(--error-color);
+left: 0;
+top: calc(100% + 10px);
+font-style: italic;
+}
+.url-shortener__buttun {
+
+}
+.button {
+
+}
+.button--rectengle-big {
+
 }
