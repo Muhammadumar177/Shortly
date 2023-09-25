@@ -51,13 +51,16 @@
             <h2 class="visually-hidden">
               URl shortener
             </h2>
-            <form class="url-shortener__form"  action="https://echo.htmlacademy.ru" method="post">
+
+            <form class="url-shortener__form js-url-shortener-form "   action="https://echo.htmlacademy.ru" method="POST" >
               <div class="url-shortener__input-wrapper">
-                <input class="url-shortener__input" type="url" name="url " aria-label="URL input" placeholder="Shorten a link here..." required>
+                <input class="url-shortener__input" type="url" name="url " aria-label="URL-input" placeholder="Shorten a link here..." required>
                 <div class="url-shortener__error-msg">Please add a link</div>
               </div>
-              <button class="url-shortener__buttun button button--rectengle-big" type="button">Shorten It!</button>
+
+              <button class="url-shortener__submit button button--rectengle-big"  type="submit">Shorten It!</button>
             </form>
+
             <div class="url-shortener__results">
               <div class="url-shortener__result">
                 <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
@@ -85,5 +88,9 @@
     </div>
   </main>
 
+
+
+
+  <script src="js/main.js" ></script>
 </body>
 </html>
