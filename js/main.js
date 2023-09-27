@@ -19,6 +19,9 @@ evt.target.textContent = 'Copied!';
 // change buttuon background-color
       evt.target.classList.add('url-shortener__copy-button--copied');
 
+      // copy short link to clip board
+      navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
+
       // reset button text and bgc after 1s
 
       setTimeout(function () {
