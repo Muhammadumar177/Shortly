@@ -376,6 +376,7 @@ INDEX FEATURES */
 padding-top: 100px;
 padding-bottom: 120px;
 background-color: var(--light-bg);
+text-transform: capitalize;
 }
 
 .index-features__top {
@@ -465,7 +466,36 @@ color: var(--text-color-dark);
 font-size: 22px;
 line-height: 33px;
 font-weight: 700;
+text-transform: capitalize;
 }
 .index-feature__info {
 
+}
+
+/* cta section */
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-image: url(../img/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color : #fff;
+text-align: center;
+
+}
+
+.cta__tittle {
+margin-top: 0;
+margin-bottom: 32px;
+font-size: 40px;
+line-height: 48px;
+font-weight: 700;
+}
+.button {
 }
